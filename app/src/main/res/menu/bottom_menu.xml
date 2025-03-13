@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/topFilms"
+        android:title="Top"
+        android:icon="@drawable/top_img"/>
+    <item android:id="@+id/expectedFilms"
+        android:title="Expected"
+        android:icon="@drawable/expected_img"/>
+</menu>

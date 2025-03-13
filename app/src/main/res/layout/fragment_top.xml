@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TopFragment">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <Button
+            android:id="@+id/backButton"
+            android:layout_height="45dp"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Назад"
+            android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/filmcard" />
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_height="45dp"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="Вперёд"
+            android:textStyle="bold"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
